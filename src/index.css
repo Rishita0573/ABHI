@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-script: 'Caveat', 'Sacramento', cursive;
+    --font-typewriter: 'Special Elite', 'Courier Prime', monospace;
+    --font-serif: 'Playfair Display', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #faf7f2;
+    color: #2c2825;
+    overflow-x: hidden;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', 'Sacramento', cursive;
+}
+
+.font-typewriter {
+  font-family: 'Special Elite', 'Courier Prime', monospace;
+}
+
+.font-serif-editorial {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Warm Scrapbook Paper Textures */
+.paper-warm {
+  background-color: #faf7f2;
+  background-image: radial-gradient(#e6ded1 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.paper-cream {
+  background-color: #fdfbf7;
+  background-image: radial-gradient(#ece3d5 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.notebook-graph {
+  background-color: #faf8f0;
+  background-image: linear-gradient(rgba(180, 170, 150, 0.15) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(180, 170, 150, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.paper-dusty-rose {
+  background-color: #f9ecef;
+  background-image: radial-gradient(#e4c6cc 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.paper-sage {
+  background-color: #f2f6f3;
+  background-image: radial-gradient(#cbded1 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Washi Tape Variants */
+.washi-tape-pink {
+  background: rgba(244, 114, 182, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(244, 114, 182, 0.5);
+  border-right: 2px dashed rgba(244, 114, 182, 0.5);
+}
+
+.washi-tape-yellow {
+  background: rgba(251, 191, 36, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(251, 191, 36, 0.5);
+  border-right: 2px dashed rgba(251, 191, 36, 0.5);
+}
+
+.washi-tape-sage {
+  background: rgba(110, 175, 140, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(110, 175, 140, 0.5);
+  border-right: 2px dashed rgba(110, 175, 140, 0.5);
+}
+
+.washi-tape-lavender {
+  background: rgba(192, 132, 252, 0.35);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  border-left: 2px dashed rgba(192, 132, 252, 0.5);
+  border-right: 2px dashed rgba(192, 132, 252, 0.5);
+}
+
+/* Film Strip Styling */
+.film-strip {
+  background-color: #1a1816;
+  border-top: 12px solid #1a1816;
+  border-bottom: 12px solid #1a1816;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.film-hole {
+  width: 10px;
+  height: 14px;
+  background-color: #faf7f2;
+  border-radius: 2px;
+}
+
+/* Scrapbook Polaroid & Card Shadows */
+.polaroid-shadow {
+  box-shadow: 0 12px 28px -6px rgba(44, 40, 37, 0.15), 0 4px 10px -2px rgba(44, 40, 37, 0.1);
+}
+
+.card-tilt-shadow {
+  box-shadow: 2px 8px 20px rgba(60, 50, 40, 0.08);
+}
+
+/* Custom Soft Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5ebd9;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c4b0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8a48e;
+}
+
+/* Float Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1.5deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+@keyframes wiggleSlow {
+  0%, 100% { transform: rotate(-1deg); }
+  50% { transform: rotate(1.5deg); }
+}
+
+.animate-wiggle-slow {
+  animation: wiggleSlow 4s ease-in-out infinite;
+}
+
+
